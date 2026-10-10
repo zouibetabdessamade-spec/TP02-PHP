@@ -1,9 +1,9 @@
 # TP 02 — Programmation Web 2 (PHP)
 **Année universitaire : 2026/2027**
 
-- **Nom :** À compléter
-- **Prénom :** À compléter
-- **Groupe :** À compléter
+- **Nom :** ZOUIBET
+- **Prénom :** ABDESSAMAD
+- **Groupe :** 01
 - **Titre :** TP 02 — PHP
 
 ## Liste des exercices
