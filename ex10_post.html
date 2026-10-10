@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 10 — Formulaire POST</title>
+</head>
+<body>
+    <h1>Formulaire POST</h1>
+    <form action="ex10_post.php" method="post">
+        <label for="nom">Nom :</label>
+        <input id="nom" name="nom" type="text" required>
+        <br>
+        <label for="prenom">Prénom :</label>
+        <input id="prenom" name="prenom" type="text" required>
+        <br>
+        <label for="groupe">Groupe :</label>
+        <select id="groupe" name="groupe" required>
+            <option value="">Choisir un groupe</option>
+            <option value="G1">G1</option>
+            <option value="G2">G2</option>
+            <option value="G3">G3</option>
+            <option value="G4">G4</option>
+        </select>
+        <br>
+        <button type="submit">Envoyer avec POST</button>
+    </form>
+    <p><a href="index.php">Retour à l'accueil</a></p>
+</body>
+</html>

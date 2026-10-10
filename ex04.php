@@ -2,42 +2,37 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Exercice 4</title>
+    <title>Exercice 4 — Types PHP</title>
 </head>
 <body>
-    <h1>Types et conversions PHP</h1>
-
+    <h1>Exercice 4 : Types et conversions</h1>
     <pre><?php
     $entier = 42;
     $chaine = "42";
     $decimal = 15.8;
     $vrai = true;
     $faux = false;
-    $vide = null;
+    $valeurNulle = null;
 
-    var_dump($entier, $chaine, $decimal, $vrai, $faux, $vide);
+    echo "Valeurs et types initiaux :\n";
+    var_dump($entier, $chaine, $decimal, $vrai, $faux, $valeurNulle);
 
-    $chaineConvertie = (int) $chaine;
-    $decimalConverti = (int) $decimal;
-    $entierConverti = (string) $entier;
+    $chaineEnEntier = (int) $chaine;
+    $decimalEnEntier = (int) $decimal;
+    $entierEnChaine = (string) $entier;
 
-    var_dump($chaineConvertie);
-    var_dump($decimalConverti);
-    var_dump($entierConverti);
+    echo "\nConversions :\n";
+    var_dump($chaineEnEntier, $decimalEnEntier, $entierEnChaine);
 
-    echo "\nAffichage de true avec echo : ";
-    echo true;
+    echo "\necho true : ";
+    echo $vrai;
+    echo "\necho false : ";
+    echo $faux;
+    echo "\nvar_dump(true et false) :\n";
+    var_dump($vrai, $faux);
 
-    echo "\nAffichage de false avec echo : ";
-    echo false;
-
-    echo "\nAvec var_dump : ";
-    var_dump(true, false);
-
-    var_dump((bool) 0);
-    var_dump((bool) "0");
-    var_dump((bool) "PHP");
-    var_dump((bool) []);
+    echo "\nConversions booléennes :\n";
+    var_dump((bool) 0, (bool) "0", (bool) "PHP", (bool) []);
     ?></pre>
 </body>
 </html>
